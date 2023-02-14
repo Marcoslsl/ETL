@@ -1,8 +1,9 @@
+from src.drivers.interfaces import HtmlCollectorInterface
 from bs4 import BeautifulSoup as bs
 from typing import List, Dict
 
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
     """HtmlCollector."""
 
     @classmethod

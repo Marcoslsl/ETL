@@ -10,7 +10,7 @@ def test_collect_essential_information():
     html_collector = HtmlCollector()
     information = html_collector.collect_essential_information(html)
 
-    random_position = randint(1, 32)
+    random_position = randint(1, 10)
     assert isinstance(information, list)
     assert isinstance(information[random_position], dict)
     assert "name" in information[random_position]

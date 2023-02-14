@@ -1,8 +1,9 @@
+from src.drivers.interfaces import HttpRequesterInterface
 from typing import Dict
 import requests
 
 
-class HttpRequester:
+class HttpRequester(HttpRequesterInterface):
     """HttpRequester."""
 
     def __init__(self) -> None:
