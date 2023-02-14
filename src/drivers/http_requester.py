@@ -7,7 +7,10 @@ class HttpRequester:
 
     def __init__(self) -> None:
         """Construct."""
-        self.__url = "https://www.nga.gov/collection/artists.html"
+        self.__url = (
+            "https://web.archive.org/web/20121007172955/http:"
+            "//www.nga.gov/collection/anZ1.htm"
+        )
 
     def request_from_page(self) -> Dict[int, str]:
         """Request."""
