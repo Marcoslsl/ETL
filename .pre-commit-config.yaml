@@ -20,6 +20,8 @@ repos:
 -   repo: local
     hooks:
       - id: pycodestyle
+        args:
+        - --exclude=src/drivers/mocks/http_requester_mock.py
         name: pycodestyle
         entry: pycodestyle
         language: system
