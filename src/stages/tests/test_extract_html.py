@@ -1,5 +1,4 @@
 from src.stages.extract import ExtractHtml
-from src.drivers.html_collector import HtmlCollector
 from src.drivers.tests.spy_http_requester import HttpRequesterSpy
 from src.drivers.tests.spy_html_collector import HtmlCollectorSpy
 from src.stages.contracts.extract_contract import ExtractContract

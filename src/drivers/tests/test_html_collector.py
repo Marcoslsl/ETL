@@ -1,5 +1,5 @@
-from src.drivers.html_collector import HtmlCollector
-from src.drivers.mocks.http_requester_mock import mock_request_from_page
+from src.drivers import HtmlCollector
+from src.drivers.mocks import mock_request_from_page
 from random import randint
 
 

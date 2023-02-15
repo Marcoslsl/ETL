@@ -1,4 +1,4 @@
-from src.drivers.http_requester import HttpRequester
+from src.drivers import HttpRequester
 
 
 def test_request_from_page(requests_mock):

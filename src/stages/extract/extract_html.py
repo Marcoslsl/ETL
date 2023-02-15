@@ -2,7 +2,7 @@ from datetime import date
 from src.drivers.interfaces import HttpRequesterInterface
 from src.drivers.interfaces import HtmlCollectorInterface
 from src.stages.contracts.extract_contract import ExtractContract
-from src.erros.extract_error import ExtractError
+from src.erros import ExtractError
 
 
 class ExtractHtml:

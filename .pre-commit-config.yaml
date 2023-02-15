@@ -3,7 +3,7 @@ repos:
     hooks:
     - id: black
       name: black
-      entry: python3 -m black .
+      entry: python3 -m black . -l79
       language: system
       stages: [commit]
       types: [python]
@@ -20,7 +20,7 @@ repos:
     hooks:
       - id: pycodestyle
         args:
-        - --exclude=src/drivers/mocks/http_requester_mock.py
+        - --exclude=src/drivers/mocks/http_requester_mock.py, src/stages/contracts/mocks/extract_contract.py
         name: pycodestyle
         entry: pycodestyle
         language: system

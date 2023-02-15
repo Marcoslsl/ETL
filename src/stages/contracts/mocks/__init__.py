@@ -1,0 +1,1 @@
+from .extract_contract import extract_contract_mock
