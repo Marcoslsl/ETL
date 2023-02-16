@@ -20,7 +20,7 @@ repos:
     hooks:
       - id: pycodestyle
         args:
-        - --exclude=src/drivers/mocks/http_requester_mock.py, src/stages/contracts/mocks/extract_contract.py
+        - --exclude=src/drivers/mocks/http_requester_mock.py, src/stages/contracts/mocks/extract_contract.py, src/stages/contracts/mocks/transform_contract.py
         name: pycodestyle
         entry: pycodestyle
         language: system

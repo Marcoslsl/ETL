@@ -14,7 +14,7 @@ def test_TransformRawData():
     assert "extraction_data" in t_raw_data.load_content[0]
 
 
-def test_TransformRawData():
+def test_TransformRawData_error():
     t_raw_data = TransformRawData()
     try:
         t_raw_data.transform("SomethingToRaiseError")
