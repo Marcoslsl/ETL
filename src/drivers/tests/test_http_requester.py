@@ -12,7 +12,6 @@ def test_request_from_page(requests_mock):
 
     http = HttpRequester()
     r = http.request_from_page()
-    print(r)
     assert "status_code" in r
     assert "html" in r
     assert r["status_code"] == 200

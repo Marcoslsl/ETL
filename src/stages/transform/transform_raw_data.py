@@ -59,7 +59,7 @@ class TransformRawData:
         second_name = None
         surname = None
 
-        match name:
+        match len(name):
             case 2:
                 first_name = name[1]
                 second_name = name[0]
@@ -70,10 +70,12 @@ class TransformRawData:
             case _:
                 first_name = name[0]
 
-        return {
+        data = {
             "first_name": first_name,
             "second_name": second_name,
             "surname": surname,
             "artist_id": link_splited[1],
             "link": link,
         }
+
+        return data
